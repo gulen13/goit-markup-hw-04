@@ -268,6 +268,8 @@ header {
 .team-item {
   background-color: var(--main-title-color);
   border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -322,23 +324,23 @@ header {
   gap: 30px;
 }
 .clients-list-item {
-width: 170px;
-height: 92px;
-border: 2px solid #AFB1B8;
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
-fill: var(--secondary-text-color);
+  width: 170px;
+  height: 92px;
+  border: 2px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--secondary-text-color);
 }
 .clients-list-item:hover,
 .clients-list-item:focus {
-border: 2px solid var(--main-logo-button-color);
-fill: var(--main-logo-button-color);
+  border: 2px solid var(--main-logo-button-color);
+  fill: var(--main-logo-button-color);
 }
 .clients-list-anker {
-fill: var(--secondary-text-color);
-padding: 16px 32px;
+  fill: var(--secondary-text-color);
+  padding: 16px 32px;
 }
 .clients-list-anker:hover,
 .clients-list-anker:focus {
@@ -374,6 +376,10 @@ padding: 16px 32px;
   min-width: 370px;
   min-height: 404px;
 }
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-item-div {
   padding: 20px 24px;
   border-right: 1px solid var(--border-color);
@@ -400,6 +406,8 @@ padding: 16px 32px;
 .portfolio-btn-item:focus {
   color: var(--main-title-color);
   background-color: var(--main-logo-button-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-title {
   font-size: 18px;
@@ -419,6 +427,15 @@ padding: 16px 32px;
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--main-background-color);
+}
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 70px;
+}
+.footer-socials {
+  padding-top: 12px;
 }
 .logo-footer {
   font-family: "Raleway";
@@ -432,9 +449,6 @@ padding: 16px 32px;
 }
 .logo-span-footer {
   color: var(--main-title-color);
-}
-.footer {
-  background-color: var(--main-background-color);
 }
 .footer-list-adress {
   line-height: 1.5;
@@ -456,5 +470,36 @@ padding: 16px 32px;
 .footer-list-cont:hover,
 .footer-list-cont:focus {
   color: var(--main-logo-button-color);
+}
+.footer-title {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 20px;
+}
+.footer-social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--main-title-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  fill: var(--main-title-color);
+  background-color: var(--main-logo-button-color);
 }
 /* -------------Footer end--------------- */
