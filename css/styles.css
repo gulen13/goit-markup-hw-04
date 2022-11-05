@@ -324,27 +324,20 @@ header {
   gap: 30px;
 }
 .clients-list-item {
-  width: 170px;
-  height: 92px;
-  border: 2px solid #afb1b8;
-  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--secondary-text-color);
-}
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border: 2px solid var(--main-logo-button-color);
-  fill: var(--main-logo-button-color);
 }
 .clients-list-anker {
   fill: var(--secondary-text-color);
   padding: 16px 32px;
+  border: 2px solid #afb1b8;
+  border-radius: 4px;
 }
 .clients-list-anker:hover,
 .clients-list-anker:focus {
   fill: var(--main-logo-button-color);
+  border: 2px solid var(--main-logo-button-color);
 }
 /* clients */
 
