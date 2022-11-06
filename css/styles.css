@@ -11,6 +11,7 @@ body {
   --main-background-color: #2f303a;
   --secondary-background-color: #f5f4fa;
   --border-color: #eeeeee;
+  --main-icons-color: #afb1b8;
 }
 /* ------------reset start------------ */
 h1,
@@ -291,23 +292,27 @@ header {
   line-height: 1.18;
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
 .social-links-team-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-bottom: 30px;
+}
+.social-links-team-item {
+  width: 44px;
+  height: 44px;
 }
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: var(--main-title-color);
-  fill: var(--secondary-text-color);
+  fill: var(--main-icons-color);
 }
 .social-link:hover,
 .social-link:focus {
@@ -327,12 +332,18 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 92px;
 }
 .clients-list-anker {
-  fill: var(--secondary-text-color);
-  padding: 16px 32px;
-  border: 2px solid #afb1b8;
+  fill: var(--main-icons-color);
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--main-icons-color);
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clients-list-anker:hover,
 .clients-list-anker:focus {
